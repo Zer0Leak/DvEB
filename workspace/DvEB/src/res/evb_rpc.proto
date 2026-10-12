@@ -1,0 +1,90 @@
+syntax = "proto3";
+
+import "google/protobuf/any.proto";
+
+package rpc;
+
+message AnswerK {
+  uint32 k = 1;
+}
+
+message MethodK {
+}
+
+message AnswerRemove {
+  bool isValid = 1;
+  ProtoDataString pds = 2;
+}
+
+message MethodRemove {
+  uint64 x = 1;
+}
+
+message AnswerInsert {
+  bool isValid = 1;
+  ProtoDataString pds = 2;
+}
+
+message MethodInsert {
+  uint64 x = 1;
+  ProtoDataString pds = 2;
+}
+
+message AnswerGetPredecessor {
+  bool isValid = 1;
+  uint64 x = 2;
+  ProtoDataString pds = 3;
+}
+
+message MethodGetPredecessor {
+  uint64 x = 1;
+}
+
+
+message AnswerGetSuccessor {
+  bool isValid = 1;
+  uint64 x = 2;
+  ProtoDataString pds = 3;
+}
+
+message MethodGetSuccessor {
+  uint64 x = 1;
+}
+
+message AnswerGetMax {
+  bool isValid = 1;
+  uint64 x = 2;
+  ProtoDataString pds = 3;
+}
+
+message MethodGetMax {
+}
+
+message AnswerGetMin {
+  bool isValid = 1;
+  uint64 x = 2;
+  ProtoDataString pds = 3;
+}
+
+message MethodGetMin {
+}
+
+message AnswerGet {
+  bool isValid = 1;
+  ProtoDataString pds = 2;
+}
+
+message MethodGet {
+  uint64 x = 1;
+}
+
+message Method {
+  google.protobuf.Any command = 1;
+}
+
+message ProtoDataString {
+  string str = 1;
+}
+
+// cd /home/edgard/Projects/mestrado/DvEB/workspace/DvEB/src/res
+// /home/edgard/app/protobuf/src/protoc -I=/home/edgard/app/protobuf/src/:./ --cpp_out=../dveb/ evb_rpc.proto
