@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it, and the dissertation that describes it, as below."
+title: "DvEB: Distributed van Emde Boas Tree"
+type: software
+authors:
+  - family-names: "Arcoverde Gusmão Lima"
+    given-names: "Edgard Nicéas"
+    orcid: "https://orcid.org/0000-0002-5241-8092"
+    affiliation: "Universidade Federal Rural de Pernambuco"
+license: MIT
+repository-code: "https://github.com/Zer0Leak/DvEB"
+keywords:
+  - van Emde Boas tree
+  - distributed data structures
+  - predecessor search
+references:
+  - type: thesis
+    title: "Distributed van Emde Boas Tree"
+    authors:
+      - family-names: "Arcoverde Gusmão Lima"
+        given-names: "Edgard Nicéas"
+    institution:
+      name: "Federal Rural University of Pernambuco"
+    thesis-type: "Master's dissertation"
+    year: 2017
+    doi: "10.5281/zenodo.23308871"

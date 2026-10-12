@@ -1,0 +1,29 @@
+{
+  "title": "DvEB: Distributed van Emde Boas Tree",
+  "upload_type": "software",
+  "description": "<p>Research prototype of a distributed van Emde Boas (vEB) tree, written in C++14 with arbitrary-precision keys (GMP). The universe of the tree grows on demand, from 2^(2^k) to 2^(2^(k+1)); every node is named by an identifier derived from its position in the tree, which stays valid as the tree grows; and nodes are spread over machines and located by IP multicast, using a lightweight request-acknowledge-reply-acknowledge protocol over UDP.</p><p>This is the code used in the experiments of the master's dissertation <em>Distributed van Emde Boas Tree</em> (Federal Rural University of Pernambuco, 2017), which describes the design, the software architecture and the exact experimental configuration.</p>",
+  "creators": [
+    {
+      "name": "Arcoverde Gusmão Lima, Edgard Nicéas",
+      "affiliation": "Universidade Federal Rural de Pernambuco",
+      "orcid": "0000-0002-5241-8092"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "van Emde Boas tree",
+    "distributed data structures",
+    "predecessor search",
+    "key-value store",
+    "big data"
+  ],
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23308871",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-thesis",
+      "scheme": "doi"
+    }
+  ]
+}
